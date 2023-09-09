@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    font-family: 'arial', 'sans-serif';
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 16px;
+}
+.sample {
+    width: 100%;
+}
+.circle {
+    display: inline-block;
+    background-color: #c4c4c4;
+    border-radius: 100%;
+    margin: auto;
+}
+.circle-big {
+    width: 300px;
+    height: 300px;
+}
+.circle-small {
+    width: 80px;
+    height: 80px;
+}
+.answer-box .circle-small {
+    width: 70px;
+    height: 70px;
+}
+.answer-box-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.options {
+    display: flex;
+    margin: 12px auto;
+}
+.darker,
+.lighter {
+    position: relative;
+}
+.darker::before,
+.lighter::before {
+    color: #ddd;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.lighter::before {
+    content: 'LIGHTER';
+}
+.darker::before {
+    content: 'DARKER';
+}
+.answer-box {
+    border: 5px dashed #ddd;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.draggable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.draggable::selection {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.drag-over {
+    border-color: #ff0000;
+}
+.reset-game {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+.btn {
+    border: none;
+    background: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #2533d3;
+    color: #f1f1f1;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:focus,
+.btn:hover {
+    background-color: #3f4eef;
+}
+.btn:active {
+    background-color: #1926ba;
+}

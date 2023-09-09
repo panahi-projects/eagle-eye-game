@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eagle Eye Test</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="container">
+                <div class="reset-game">
+                    <button id="reset" type="button" class="btn">RESET</button>
+                </div>
+                <div class="sample">
+                    <div id="question" class="circle circle-big"></div>
+                </div>
+                <div class="answer-box-container">
+                    <div class="answer-box lighter drop-zone" data-status="lighter"></div>
+                    <div class="answer-box darker drop-zone" data-status="darker"></div>
+                </div>
+                <div id="Options" class="options">
+                    <span id="1" class="circle circle-small draggable"></span>
+                    <span id="2" class="circle circle-small draggable"></span>
+                    <span id="3" class="circle circle-small draggable"></span>
+                    <span id="4" class="circle circle-small draggable"></span>
+                    <span id="5" class="circle circle-small draggable"></span>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
